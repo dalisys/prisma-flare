@@ -1,75 +1,21 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Minimal Starter with Prisma to deploy on Cloudflare pages
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+``` sh
+C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\wrangler-dist\cli.js:29765
+            throw a;
+            ^
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+TypeError [ERR_INVALID_FILE_URL_PATH]: File URL path must be absolute
+    at getPathFromURLWin32 (node:internal/url:1364:11)
+    at fileURLToPath (node:internal/url:1394:22)
+    at tryFileURLToPath (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:133:12)
+    at retrieveSourceMapURL (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:335:27)
+    at Array.<anonymous> (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:353:26)
+    at C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:199:32
+    at mapSourcePosition (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:383:21)
+    at wrapCallSite (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:592:20)
+    at prepareStackTrace (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\node_modules\@cspotcode\source-map-support\source-map-support.js:671:41)
+    at getSourceMappedString (C:\Users\username\AppData\Roaming\npm\node_modules\wrangler\wrangler-dist\cli.js:161846:34) {
+  code: 'ERR_INVALID_FILE_URL_PATH'
+}
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
