@@ -2,5 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@prisma/nuxt"],
+  nitro: {
+    preset: "cloudflare-pages",
+    experimental: {
+      wasm: true,
+    },
+    esbuild: {
+      options: {
+        target: "esnext",
+      },
+    },
+  },
 });
