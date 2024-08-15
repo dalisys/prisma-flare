@@ -10,14 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@prisma/nuxt": "^0.0.35",
     "nuxt": "^3.12.4",
     "ts-node": "^10.9.2",
     "vue": "latest"
   },
   "devDependencies": {
-    "@prisma/client": "^5.18.0",
-    "prisma": "^5.18.0"
+    "@prisma/client": "5.19.0-dev.8",
+    "prisma": "5.19.0-dev.8"
   },
   "prisma": {
     "seed": "node prisma/seed.mjs"
