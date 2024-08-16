@@ -1,6 +1,14 @@
+import pg from "pg";
+const { Pool } = pg;
+import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+const connectionString = `${process.env.DATABASE_URL}`;
+
+const pool = new Pool({ connectionString });
+const adapter = new PrismaPg(pool);
+const prisma = new PrismaClient({ adapter });
+
 export default defineEventHandler(async (event) => {
   try {
     const users = await prisma.user.findMany({
