@@ -10,9 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "nitro-cloudflare-dev": "^0.1.6",
     "nuxt": "^3.12.4",
     "ts-node": "^10.9.2",
-    "vue": "latest"
+    "vue": "latest",
+    "wrangler": "^3.71.0"
   },
   "devDependencies": {
     "@prisma/client": "5.19.0-dev.8",
