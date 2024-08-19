@@ -1,9 +1,9 @@
-import { drizzle } from "drizzle-orm/node-postgres";
-import pg from "pg";
+import { drizzle } from "drizzle-orm/postgres-js";
+import postgres from "postgres";
 import "dotenv/config"; // Ensure environment variables are loaded
 import * as schema from "./schema";
 // Create a new PostgreSQL Client instance with SSL and environment variables
-export const client = new pg.Client({
+export const client = postgres({
   host: process.env.DB_HOST,
   port: Number(process.env.DB_PORT),
   user: process.env.DB_USERNAME,
@@ -15,7 +15,6 @@ export const client = new pg.Client({
 });
 
 // Connect the client
-client.connect();
 
 // Initialize Drizzle with the PostgreSQL client
 export const db = drizzle(client, { schema });
