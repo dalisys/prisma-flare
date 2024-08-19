@@ -15,5 +15,6 @@ export default defineNuxtConfig({
         target: "esnext",
       },
     },
+    minify: false,
   },
 });
