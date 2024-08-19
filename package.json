@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@prisma/nuxt": "^0.0.35",
+    "drizzle-orm": "^0.29.5",
     "nuxt": "^3.12.4",
+    "postgres": "^3.4.4",
     "ts-node": "^10.9.2",
     "vue": "latest"
   },
   "devDependencies": {
     "@prisma/client": "^5.18.0",
+    "drizzle-kit": "^0.24.0",
     "prisma": "^5.18.0"
   },
   "prisma": {
