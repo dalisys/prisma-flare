@@ -7,5 +7,8 @@ export default defineNuxtConfig({
     rollupConfig: {
       external: ["pg-native", "cloudflare:sockets"],
     },
+    experimental: {
+      wasm: true,
+    },
   },
 });
