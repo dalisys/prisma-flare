@@ -7,22 +7,22 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit migrate",
+    "seed": "tsx server/database/seed.ts"
   },
   "dependencies": {
-    "@prisma/nuxt": "^0.0.35",
-    "drizzle-orm": "^0.29.5",
+    "@types/pg": "^8.11.6",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
     "nuxt": "^3.12.4",
+    "pg": "^8.12.0",
     "postgres": "^3.4.4",
     "ts-node": "^10.9.2",
     "vue": "latest"
   },
   "devDependencies": {
-    "@prisma/client": "^5.18.0",
-    "drizzle-kit": "^0.24.0",
-    "prisma": "^5.18.0"
-  },
-  "prisma": {
-    "seed": "node prisma/seed.mjs"
+    "drizzle-kit": "^0.22.0"
   }
 }
